@@ -1,47 +1,52 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
 
-# A sample workflow which checks out your code and scans your desired k8s config files for misconfigurations using the Datree CLI.
-# The results are then uploaded to GitHub Security Code Scanning.
-#
-# For more information and configurations options, see https://github.com/datreeio/action-datree/
+name: Generate Snake
 
-name: Datree
+# Controls when the action will run. This action runs every 6 hours.
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+  schedule:
+      # every 6 hours
+    - cron: "0 */6 * * *"
 
-permissions:
-  contents: read
+# This command allows us to run the Action automatically from the Actions tab.
+  workflow_dispatch:
 
+# The sequence of runs in this workflow:
 jobs:
-  datree:
-    permissions:
-      contents: read # for actions/checkout to fetch code
-      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+    # Checks repo under $GITHUB_WORKSHOP, so your job can access it
       - uses: actions/checkout@v3
-      - name: Run Datree policy check
-        continue-on-error: true
-        uses: datreeio/action-datree@de67ae7a5133d719dc794e1b75682cd4c5f94d8a
+
+    # Generates the snake  
+      - uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          # these next 2 lines generate the files on a branch called "output". This keeps the main branch from cluttering up.
+          outputs: |
+            dist/github-contribution-grid-snake.gif
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
-          # In order to use the Datree action you will need to have a Datree token.
-          # See https://hub.datree.io/setup/account-token#1-get-your-account-token-from-the-dashboard to acquire your token.
-          DATREE_TOKEN: ${{ secrets.DATREE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     # show the status of the build. Makes it easier for debugging (if there's any issues).
+      - name: Show build status
+        run: git status
+
+      - name: Push new files to output branch 
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          # Add the path to the configuration file/s that you would like to test.
-          # See https://github.com/datreeio/action-datree#usage for all available options.
-          path: test-file.yaml
-          # Setting a SARIF output will generate a file named "datree.sarif" containing your test results
-          cliArguments: "-o sarif"
-      - name: Upload result to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: datree.sarif
+          # the output branch we mentioned above
+          target_branch: output
+          build_dir: dist
+          commit_message: Update snake animations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
