@@ -106,9 +106,3 @@
 
 ###
 
-<br clear="both" />
-
-<img alt="GitHub Snake" src="https://raw.githubusercontent.com/tahirabbas11/tahirabbas11/output/github-contribution-grid-snake.svg" />
-
-![snake gif](https://github.com/tahirabbas11/tahirabbas11/blob/output/github-contribution-grid-snake.gif)
-### ###
