@@ -25,7 +25,6 @@
 
 
 ###
-<br/>
 <div align="left">
   <a href="mailto:tahir.12868@iqra.edu.pk">
     <img
@@ -58,6 +57,7 @@
       alt="youtube logo"
   /></a>
 </div>
+<br/>
 
 <div align="left">
   <img
