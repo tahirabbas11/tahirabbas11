@@ -99,4 +99,9 @@
     height="35"
     alt="mongodb logo"
   />
+<img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+    height="35"
+    alt="nodejs logo"
+  />
 </div>
