@@ -15,7 +15,7 @@
 
 
 ###
-<div align="left">
+<div align="center">
   <a href="mailto:tahir.12868@iqra.edu.pk">
     <img
       src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge"
@@ -49,7 +49,7 @@
 </div>
 <br/>
 
-<div align="left">
+<div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=nextjs" height="40" alt="nextjs logo"  />
