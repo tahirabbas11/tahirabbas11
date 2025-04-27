@@ -1,10 +1,10 @@
 <h2 align="left">
-  Hi 👋! I'm Tahir Abbas, your Friendly Neighbourhood Full Stack Developer
+  Hi 👋! I'm Tahir Abbas, your Friendly Neighbourhood Software Engineer 
 </h2>
 
 ###
 <p align="left">
-  I am a Full Stack Developer with a strong focus on backend development,
+  I am a software engineer with a strong focus on backend development,
   bringing nearly 2 years of professional experience. Currently, I work as a
   Developer at <b>Cubix</b>, where I design and implement robust backend
   solutions while also working across the full stack. I specialize in building
@@ -14,9 +14,9 @@
 
 ###
 <h3 align="left">Statistics
-<a href="https://visitcount.itsvg.in">
+<!-- <a href="https://visitcount.itsvg.in">
   <img src="https://visitcount.itsvg.in/api?id=tahirabbas11&icon=0&color=0" alt="Visitor Count" />
-</a>
+</a> -->
 </h3>
 <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tahirabbas11&theme=vue" alt="Profile Details" />
 
