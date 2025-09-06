@@ -6,7 +6,7 @@
 <p align="left">
   I am a software engineer with a strong focus on backend development,
   bringing nearly 2 years of professional experience. Currently, I work as a
-  Developer at <b>Cubix</b>, where I design and implement robust backend
+  Developer at <strong>Contour Software - <em>Integrated Dealership System (IDS)</em></strong>, where I design and implement robust backend
   solutions while also working across the full stack. I specialize in building
   scalable and efficient server-side applications, with expertise in various
   frameworks and technologies.
