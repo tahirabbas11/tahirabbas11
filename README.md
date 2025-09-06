@@ -65,6 +65,18 @@
 <h3 align="left">Frameworks & Databases</h3>
 <div align="left">
   <img
+    src="https://skillicons.dev/icons?i=cs&theme=dark&perline=15"
+    height="40"
+    alt="nodejs logo"
+  />
+  <img width="12" />
+    <img
+    src="https://skillicons.dev/icons?i=dotnet&theme=dark&perline=15"
+    height="40"
+    alt="nodejs logo"
+  />
+  <img width="12" />
+  <img
     src="https://skillicons.dev/icons?i=nodejs"
     height="40"
     alt="nodejs logo"
@@ -133,6 +145,13 @@
     alt="npm logo"
   />
   <img width="12" />
+  <img
+    src="https://scontent.fkhi21-1.fna.fbcdn.net/v/t39.30808-6/490657544_10229387747891186_4014295396236555309_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=bd9a62&_nc_eui2=AeGnryoueEWoCbs3fqdlctfFUFmTt8kH9qdQWZO3yQf2p4UfVZ1u3f-dWiF8h33Rn-Kn2Ik_Y8NygZ5JROdixzRt&_nc_ohc=DQJZVRBa0A8Q7kNvwE7Dbp-&_nc_oc=Adm5jBCcKrROyLX8j4ABuwAqycq3RCr2I3A3GULydRr-YBSbV0RvVkSNubQ6fE8JErM&_nc_zt=23&_nc_ht=scontent.fkhi21-1.fna&_nc_gid=d-umg0IGvJRFhau3KvMfLQ&oh=00_AfbxGUkmHurXA4f__gAyzQowOyNkb9O1fwYG-giU3r8Fkw&oe=68C23348"
+    height="15"
+    alt="npm logo"
+    style="padding-bottom: 10px;"
+  />
+  <img width="12" />
 </div>
 
 ###
@@ -170,4 +189,3 @@
   />
   <img width="12" />
 </div>
-
